@@ -29,6 +29,10 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
+  input {
+    border: 0;
+  }
+
   body, input, textarea, button {
     font: 400 1rem "Roboto", sans-serif;
   }

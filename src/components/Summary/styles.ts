@@ -1,0 +1,62 @@
+import styled, { css } from 'styled-components';
+
+export const SummaryContainer = styled.section`
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: -5rem;
+`;
+
+interface SummaryCardProps {
+  variant?: 'green';
+}
+
+export const SummaryCard = styled.div<SummaryCardProps>`
+  background-color: ${(props) => props.theme['gray-600']};
+
+  ${(props) =>
+    props.variant === 'green' &&
+    css`
+      background-color: ${props.theme['green-500']};
+    `}
+
+  padding: 1.5rem 2rem;
+  border-radius: 6px;
+
+  &:nth-child(1) header > svg {
+    color: ${(props) => props.theme['green-300']};
+  }
+
+  &:nth-child(2) header > svg {
+    color: ${(props) => props.theme['red-300']};
+  }
+
+  &:nth-child(3) header > svg {
+    color: ${(props) => props.theme.white};
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: ${(props) => props.theme['gray-300']};
+
+    span {
+      line-height: 1.6;
+    }
+  }
+
+  strong {
+    display: block;
+    margin-top: 0.75rem;
+
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: bold;
+  }
+`;
