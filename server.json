@@ -23,6 +23,30 @@
       "category": "Educação",
       "price": 1950,
       "createdAt": "2025-01-26T01:44:36.848Z"
+    },
+    {
+      "description": "Desenvolvimento de app",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2025-01-27T01:16:46.410Z",
+      "id": 4
+    },
+    {
+      "description": "Pastel",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-01-27T01:25:56.952Z",
+      "id": 5
+    },
+    {
+      "description": "Microservice",
+      "price": 1000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2025-01-27T01:26:45.585Z",
+      "id": 6
     }
   ]
 }
