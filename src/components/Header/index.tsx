@@ -1,6 +1,5 @@
 import { HeaderContainer, HeaderContent, NewTransactionButton } from './styles';
 import dtMoneyLogo from '../../assets/logo.svg';
-import { NavLink } from 'react-router-dom';
 import * as Dialog from '@radix-ui/react-dialog';
 import { NewTransactionModal } from '../NewTransactionModal';
 
@@ -8,9 +7,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <NavLink to="/">
-          <img src={dtMoneyLogo} alt="" />
-        </NavLink>
+        <img src={dtMoneyLogo} alt="" />
 
         <Dialog.Root>
           <Dialog.Trigger asChild>
